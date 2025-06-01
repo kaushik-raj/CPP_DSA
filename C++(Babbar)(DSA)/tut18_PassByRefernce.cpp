@@ -1,0 +1,30 @@
+// #include<iostream>
+// using namespace std;
+// void dummy(int *n ) {            // That '*' is used from pointer concept {Page no. 13}.  
+//     (*n)++;
+//     cout << " n is " << *n <<endl;
+// }
+// int main() {
+//     int n;
+//     cin >> n;
+//     dummy(&n);
+//     cout<<"number n is "<< n << endl;
+//     return 0;
+// }
+
+
+
+
+#include<iostream>
+using namespace std;
+void dummy(int &n ) {               // Here we have used the refernce varibale concept '&' form {Page no. 7} .
+    n++;
+    cout << " n is " << n <<endl;
+}
+int main() {
+    int n;
+    cin >> n;
+    dummy(n);
+    cout<<"number n is "<< n << endl;
+    return 0;
+}
